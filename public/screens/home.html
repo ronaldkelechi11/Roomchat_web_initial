@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--  -->
+    <link rel="stylesheet" href="/public/styling/index.css">
+    <script src="/public/scripts/home.js"></script>
+</head>
+
+<body>
+    <div class="home">
+        <div class="appBar">
+            <div class="txt">Super Chat 😁</div>
+
+            <div class="signOut" id="signOut" onclick="signOut()">
+                SignOut
+            </div>
+        </div>
+
+        <div class="messageListWrapper">
+            <div class="messageList">
+                <div class="itemSent">
+                    <div class="nickname">Placeholder</div>
+                    <div class="mainText">Placeholder</div>
+                </div>
+                <div class="itemRecieved">
+                    <div class="nickname">Placeholder</div>
+                    <div class="mainText">Placeholder</div>
+                </div>
+            </div>
+            <div class="goToDiv"></div>
+        </div>
+
+        <div class="enterMessage">
+            <input type="text" placeholder="Message" class="typeMessage" id="typeMessage" name="message" required>
+            <button class="send" id="send" onclick="sendMessage()">📩</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

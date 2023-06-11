@@ -1,0 +1,165 @@
+@import 'variables';
+
+.home {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    .appBar {
+        display: flex;
+        z-index: 30;
+        position: fixed;
+        top: 0;
+        position: relative;
+        justify-content: space-between;
+
+        .txt {
+            color: white;
+            padding: 10px;
+            font-size: $largefontSize;
+        }
+
+        .signOut {
+            cursor: pointer;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: auto;
+            border-radius: 10px;
+            color: white;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $darkerPrimary;
+            font-family: $mainFontFamily;
+            font-size: $smallFontSize;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        background-color: $primaryColor;
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .messageListWrapper {
+        overflow-y: scroll;
+        width: 100%;
+
+
+
+        .messageList {
+            padding-right: 10px;
+            padding-left: 10px;
+            overflow-y: hidden;
+            padding-bottom: 20px;
+            width: auto;
+            flex: 1;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+
+            .itemSent {
+                width: max-content;
+                border-radius: 20px 20px 0px 20px;
+                ;
+                margin-top: 10px;
+                background-color: $mesageColorSent;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                align-self: flex-end;
+
+                .nickname {
+                    font-size: $smallFontSize;
+                    color: $lighterGrey;
+                }
+
+                .mainText {
+                    font-family: $mainFontFamily;
+                    font-size: $mediumFontSize;
+                    color: white;
+                }
+            }
+
+            .itemRecieved {
+                width: max-content;
+                border-radius: 20px 20px 20px 0px;
+                margin-top: 10px;
+                background-color: $mesageColorRecieved;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: start;
+
+                .nickname {
+                    font-size: $smallFontSize;
+                    color: $lighterGrey;
+                }
+
+                .mainText {
+                    font-family: $mainFontFamily;
+                    font-size: $mediumFontSize;
+                    color: white;
+                }
+            }
+        }
+
+        .goToDiv {
+            height: 1px;
+        }
+    }
+
+    .enterMessage {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+
+
+        .typeMessage {
+            outline: none;
+            height: 100%;
+            width: 70%;
+            color: black;
+            font-size: $mediumFontSize;
+            font-family: $mainFontFamily;
+            background-color: $lighterGrey;
+            border: none;
+            padding: 5px;
+        }
+
+        .typeMessage::placeholder {
+            color: $darkerGrey;
+        }
+
+        .send {
+            cursor: pointer;
+            height: 120%;
+            width: 30%;
+            display: flex;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            font-size: $largefontSize;
+            font-family: $mainFontFamily;
+            background-color: $darkerPrimary;
+        }
+    }
+
+}

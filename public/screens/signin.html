@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- Linking -->
+    <link rel="stylesheet" href="/public/styling/index.css">
+    <script src="/public/scripts/signin.js" type="module"></script>
+</head>
+
+<body>
+    <div class="signin">
+        <h1>Sign In</h1>
+
+        <form method="post">
+            <input type="text" name="nickname" id="nickname" placeholder="Nickname" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Sign In" id="submitButton">
+        </form>
+
+        <div class="goToSignUp" id="goToSignUp">Don't have an account? <span>Sign Up</span></div>
+
+        <div class="errormessage">No User Found with that email and password</div>
+    </div>
+</body>
+
+</html>

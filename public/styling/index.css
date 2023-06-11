@@ -1,0 +1,424 @@
+.signUp {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.signUp h1 {
+  color: #b8008a;
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+.signUp form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.signUp form input {
+  height: 40px;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 10px;
+  border-color: white;
+  border-width: 2px;
+}
+.signUp form input::-moz-placeholder {
+  color: white;
+  font-family: "Poppins";
+}
+.signUp form input::placeholder {
+  color: white;
+  font-family: "Poppins";
+}
+.signUp form input[type=submit] {
+  cursor: pointer;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #b8008a;
+  border-color: transparent;
+  justify-content: center;
+}
+.signUp .goToSignIn {
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.signUp .goToSignIn span {
+  color: #b8008a;
+}
+
+@keyframes signupanimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    color: white;
+    transform: scale(1.2);
+  }
+}
+.signin {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.signin h1 {
+  color: #b8008a;
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+.signin form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.signin form input {
+  height: 40px;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 10px;
+  border-color: white;
+  border-width: 2px;
+}
+.signin form input::-moz-placeholder {
+  color: white;
+  font-family: "Poppins";
+}
+.signin form input::placeholder {
+  color: white;
+  font-family: "Poppins";
+}
+.signin form input[type=submit] {
+  cursor: pointer;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #b8008a;
+  border-color: transparent;
+  justify-content: center;
+}
+.signin .goToSignUp {
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.signin .goToSignUp span {
+  color: #b8008a;
+}
+.signin .errormessage {
+  background-color: #a50000;
+  color: white;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.home {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  overflow-y: hidden;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.home .appBar {
+  display: flex;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  position: relative;
+  justify-content: space-between;
+}
+.home .appBar .txt {
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+.home .appBar .signOut {
+  cursor: pointer;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #66004d;
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.home ::-webkit-scrollbar {
+  background-color: #b8008a;
+  width: 3px;
+}
+.home ::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+.home .messageListWrapper {
+  overflow-y: scroll;
+  width: 100%;
+}
+.home .messageListWrapper .messageList {
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+  width: auto;
+  flex: 1;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+}
+.home .messageListWrapper .messageList .itemSent {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px 20px 0px 20px;
+  margin-top: 10px;
+  background-color: #00ca11;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+.home .messageListWrapper .messageList .itemSent .nickname {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.home .messageListWrapper .messageList .itemSent .mainText {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: white;
+}
+.home .messageListWrapper .messageList .itemRecieved {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px 20px 20px 0px;
+  margin-top: 10px;
+  background-color: #0031b9;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+.home .messageListWrapper .messageList .itemRecieved .nickname {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.home .messageListWrapper .messageList .itemRecieved .mainText {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: white;
+}
+.home .messageListWrapper .goToDiv {
+  height: 1px;
+}
+.home .enterMessage {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.home .enterMessage .typeMessage {
+  outline: none;
+  height: 100%;
+  width: 70%;
+  color: black;
+  font-size: 18px;
+  font-family: "Poppins";
+  background-color: #c4c4c4;
+  border: none;
+  padding: 5px;
+}
+.home .enterMessage .typeMessage::-moz-placeholder {
+  color: #929292;
+}
+.home .enterMessage .typeMessage::placeholder {
+  color: #929292;
+}
+.home .enterMessage .send {
+  cursor: pointer;
+  height: 120%;
+  width: 30%;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Poppins";
+  background-color: #66004d;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.main h1 {
+  width: 100%;
+  color: #b8008a;
+  text-align: center;
+  font-size: 40px;
+  animation: bulge 2s infinite ease-out;
+}
+.main h1 span {
+  color: white;
+}
+@keyframes bulge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.main .wave {
+  width: 100%;
+  height: 70px;
+  font-size: 144px;
+  text-align: center;
+  animation: wave 2s infinite ease-out;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+.main .selector {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+.main .selector .createNewRoom,
+.main .selector .joinNewRoom {
+  margin-top: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: #b8008a;
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  font-size: 24px;
+}
+.main .selector .formNewRoom,
+.main .selector .formJoinRoom {
+  margin-top: 10px;
+  width: 30%;
+  visibility: collapse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+.main .selector .formNewRoom input,
+.main .selector .formJoinRoom input {
+  border: none;
+  margin-top: 5px;
+  height: 40px;
+  color: black;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.main .selector .formNewRoom input::-moz-placeholder, .main .selector .formJoinRoom input::-moz-placeholder {
+  color: #929292;
+}
+.main .selector .formNewRoom input::placeholder,
+.main .selector .formJoinRoom input::placeholder {
+  color: #929292;
+}
+.main .selector .formNewRoom button,
+.main .selector .formJoinRoom button {
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 50px;
+  width: 105%;
+  color: white;
+  background-color: #00ca11;
+}
+.main .footer {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+}
+.main .footer span {
+  color: #b8008a;
+}
+
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Poppins";
+}/*# sourceMappingURL=index.css.map */
